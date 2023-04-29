@@ -1,0 +1,48 @@
+<form [formGroup]="myForm" (ngSubmit)="onSubmit()" class="example-form">
+  <mat-form-field class="example-full-width" appearance="fill">
+    <mat-label>Title</mat-label>
+    <input matInput formControlName="title">
+  </mat-form-field>
+  <mat-form-field class="example-full-width"
+                  [ngClass]="{'has-error': myForm.invalid && myForm.touched}"
+                  appearance="fill">
+    <mat-label>Price</mat-label>
+    <input matInput formControlName="price">
+    <div *ngIf="myForm.invalid && myForm.touched" style="color: red">Price must be in numbers</div>
+  </mat-form-field>
+  <mat-form-field class="example-full-width"
+                  appearance="fill">
+    <mat-label>Year</mat-label>
+    <input matInput formControlName="year">
+  </mat-form-field>
+  <mat-form-field class="example-full-width"
+                  appearance="fill">
+    <mat-label>Wheel diameter</mat-label>
+    <input matInput formControlName="diameter">
+  </mat-form-field>
+  <mat-form-field class="example-full-width"
+                  appearance="fill">
+    <mat-label>Material</mat-label>
+    <input matInput formControlName="material">
+  </mat-form-field>
+  <mat-form-field class="example-full-width"
+                  appearance="fill">
+    <mat-label>Weight</mat-label>
+    <input matInput formControlName="weight">
+  </mat-form-field>
+
+  <button class="button"
+          [disabled]="myForm.invalid"
+          mat-flat-button
+          style="margin-right: 2px" color="primary"
+          type="submit">
+    {{isNew ? 'Add product' : 'Update'}}
+  </button>
+  <button class="button"
+          mat-flat-button color="primary"
+          (click)="onNoClick()"
+          type="button">
+    Cancel
+  </button>
+
+</form>

@@ -1,0 +1,55 @@
+{
+  "products": [
+    {
+      "id": 2,
+      "title": "MacBook",
+      "price": "123",
+      "year": "312",
+      "image": "assets/images/bicycle.jpg",
+      "configure": {
+        "diameter": "",
+        "material": "",
+        "weight": ""
+      }
+    },
+    {
+      "id": 5,
+      "title": "Matrix S130",
+      "price": "1100",
+      "year": "2023",
+      "image": "assets/images/bicycle.jpg",
+      "configure": {
+        "diameter": "20",
+        "material": "steel",
+        "weight": "15"
+      }
+    },
+    {
+      "id": 6,
+      "title": "BF-0351",
+      "price": "800",
+      "year": "2023",
+      "image": "assets/images/bicycle.jpg",
+      "configure": {
+        "diameter": "",
+        "material": "",
+        "weight": ""
+      }
+    }
+  ],
+  "basket": [
+    {
+      "id": 6,
+      "title": "BF-035",
+      "price": "800",
+      "year": "2023",
+      "image": "assets/images/bicycle.jpg",
+      "configure": {
+        "diameter": "19",
+        "material": "plastic",
+        "weight": "12"
+      },
+      "quantity": 2
+    }
+  ]
+}
